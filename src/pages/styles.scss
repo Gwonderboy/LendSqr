@@ -1,0 +1,57 @@
+
+/************** Log In ****************/
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #fcfcfc;
+}
+
+.sign-in-bg {
+  width: 50%;
+  height: 100%;
+}
+
+.bg_img {
+  display: flex;
+  margin: 20% auto;
+}
+
+.welcome_text {
+  color: #213f7d;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.form_div {
+  position: relative;
+  width: 40%;
+  padding: 5%;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.form_div h2 {
+  color: #545f7d;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.forgot-password {
+  display: block;
+  margin: 1rem 0;
+  color: #39cdcc;
+  text-decoration: none;
+}

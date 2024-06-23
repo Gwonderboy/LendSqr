@@ -1,0 +1,109 @@
+/************** Nav Bar ****************/
+
+.nav_bar {
+  height: 100px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.profile {
+    display: flex;
+}
+
+/***************** Input *****************/
+
+.input_div {
+  width: 100%;
+  border-radius: 5px;
+  align-self: stretch;
+  padding: 10px 0; // Adjusted padding
+  outline: none;
+  border: 2px solid #545f7d26;
+  background: none;
+  font-size: 16px;
+  padding-left: 10px; // Add padding to avoid overlap with the label
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 30px; // Adjusted margin for better spacing
+}
+
+.inputBox label {
+  position: absolute;
+  top: 7px;
+  left: 10px; // Align with input padding
+  padding: 5px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #545f7d;
+}
+
+.inputBox .input_div:focus ~ label,
+.inputBox .input_div:valid ~ label {
+  color: #39cdcc;
+  font-size: 16px;
+  transform: translateY(-30px);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #39cdcc;
+}
+
+/***************** Button *****************/
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/***************** Search Wrapper *****************/
+
+.search_wrapper {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background-color: #fff;
+  border: 2px solid #545f7d26;
+  border-radius: 5px;
+}
+
+.search {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.search_btn {
+  height: 100%;
+  width: 50px;
+  padding: 10px;
+  background-color: #39cdcc;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search_btn:hover {
+  background-color: #213f7d;
+}
